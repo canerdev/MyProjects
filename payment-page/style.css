@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.text-gray {
+    color: gray;
+}
+
+.navbar .text-gray {
+    font-weight: bold;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid gray;
+    width: 35vw;
+    height: fit-content;
+    box-shadow: .5px .5px 3.5px 1.5px gray;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: inherit;
+    padding: 1em;
+    border-bottom: 1px solid gray;
+}   
+
+.navbar > h3 {
+    margin-right: 1em;
+}
+
+.navbar .left-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.navbar .left-nav h3:last-child {
+    padding: 0 2em;
+}
+
+.product-details {
+    width: inherit;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1em ;
+    border-bottom: 1px solid gray;
+}
+
+.product-details .number-product {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 1em;
+}
+
+.product-details .number-product .number{
+    margin-right: 1em;
+}
+
+.product-details .number-product p {
+    margin-top: .5em;
+}
+
+.product-details .amount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-details .amount p {
+    margin-right: 1em;
+}
+
+.product-details .amount a:hover {
+    opacity: .6;
+}
+
+.coupon {
+    margin-top: 1em;
+    width: inherit;
+    margin-left: 2em; 
+}
+
+.coupon a {
+    color: black;
+}
+
+.price-details {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: inherit;
+}
+
+
+.price-details .names-prices {
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.price-details .names-prices p {
+    margin-bottom: .4em;
+}
+
+.price-details .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: inherit;
+    padding: 0 1em;
+}
+
+.price-details .total .total-price #overline {
+    font-weight: normal;
+    font-size: .7em;
+    text-decoration: line-through;
+}
+
+.price-details .total .total-price {
+    text-align: right;
+}
+
+#tax {
+    width: inherit;
+    text-align: right;
+    margin-right: 2em;
+}
+
+.price-details .sale {
+    width: 33vw;
+    text-align: center;
+    margin-top: 1em;
+    padding: .5em 0;
+    color: rgb(221, 169, 71);
+    background-color: #e0dac2;
+    margin-bottom: 1em;
+}
+
+

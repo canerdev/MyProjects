@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Dancing+Script&family=Fuzzy+Bubbles&family=Genos&family=M+PLUS+1+Code:wght@300&family=Red+Hat+Mono:wght@300&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Genos', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(24, 235, 42, 1);
+    width: 100%;
+}
+
+.navbar a.direction {
+    float: left;
+    padding: 16px 16px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    letter-spacing: .20em;
+}
+
+a#active {
+    background-color: white;
+    color: rgba(24, 235, 42, 1);
+    font-weight: bold;
+}
+
+a.direction:hover {
+    transition: all .25s ease-in-out;
+    background-color: white;
+    color: rgba(24, 235, 42, 1);
+    
+}
+
+.navbar-right a {
+    text-decoration: none;
+    margin: 0 12px;
+    padding: 8px 16px;
+    font-weight: bold;
+    letter-spacing: .20em;
+}
+
+.navbar-right #sign-in {
+    border-radius: 5px;
+    background-color: white;
+    color: rgba(24, 235, 42, 1);
+}
+
+.navbar-right #sign-in:hover {
+    transition: background-color .25s ease;
+    background-color: rgb(233, 220, 220);
+}
+
+.navbar-right #log-in:hover {
+    transition: all .25s ease-in-out;
+    background-color: white;
+    color: rgba(24, 235, 42, 1);
+    border-radius: 5px;
+
+}
+
+.card:not(header) {
+    font-size: 22px;
+}
+
+.content {
+    display: flex;
+}
+
+aside {
+    position: fixed;
+    left: 0;
+    top: 3.22em;
+    height: calc(100vh - 3.2em);
+    width: 17vw;
+    display: inline-block;
+    background-color: red;
+    padding-top: 1em;
+    color: white;
+}
+
+aside .aside-sec  {
+    margin-left: .275em;
+    width: 95%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: .8em;
+    padding: .2em .8em .2em 0;
+}
+
+aside .aside-sec:hover {
+    width: fit-content;
+    transition: all .25s ease;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.aside-text {
+    font-size: 1.75em;
+}
+
+.icons {
+    width: 2.5em;
+    margin: 0 .7em;
+    
+}
+
+.cards {
+    margin-left: 15%;
+    width: 85%;
+    padding: 80px 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+
+.cards > p {
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+    letter-spacing: .8em;
+    font-family:'Times New Roman', Times, serif;
+    background-image: linear-gradient(45deg, white, rgb(32, 186, 32));
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.down-arrow {
+    margin-top: .5em;
+    border-radius: 50% 50%;
+    background-color: white;
+    padding: .25em;
+    box-shadow: 1px 1px 10px crimson;
+}
+
+.down-arrow:hover {
+    transition: background-color .35s ease;
+    opacity: .3;
+    background-color: rgb(235, 204, 210);
+}
+
+.down-arrow:active {
+    position: relative;
+    top: 1em;
+}
+
+.card {
+    width: 52.5%;
+    height: fit-content;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 12px;
+    background-color: MediumSeaGreen;
+    box-shadow: 1px 1px 10px crimson;
+}
+
+.card .time-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .time-date img {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.up {
+    margin-bottom: .15em;
+    margin-left: .1em;
+    opacity: .5;
+}
+
+.card .time-date .reads {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+
+}
+
+.card .writer-id {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    float: right;
+    font-weight: bold;
+    padding: .5em;
+}
+
+.card .writer-id:hover {
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.card .writer-id img {
+    position: relative;
+    right: .42em;
+}
+
+.card .time-date .details {
+    color: white;
+    opacity: .5;
+}
+.reaction {
+    margin-top: 0.45em;
+    display: flex;
+    align-items: center;
+}
+
+.reaction img {
+    width: 2em;
+    height: auto;
+    margin-right: .5em;
+}
+
+.reaction #comment {
+    margin-left: -.1em;
+    width: 2.4em;
+    height: auto;
+}
+
+.reaction img:hover {
+    opacity: .6;
+    cursor: pointer;
+}
+
+footer {
+    width: 85%;
+    margin-left: 15%;
+    background-color: darkolivegreen;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: .5em 0;
+}
+
+.rights {
+    margin-bottom: 1em;
+    font-size: 1.25em;
+    font-weight: bold;
+    letter-spacing: .1em;
+}
+
+.social-media img:not(#fb) {
+    margin-right: .5em;
+}
+
+.social-media img:hover {
+    opacity: .5;
+}

@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Dancing+Script&family=Fuzzy+Bubbles&family=Genos&family=M+PLUS+1+Code:wght@300&family=Red+Hat+Mono:wght@300&family=Source+Sans+3:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.top-bar {
+    padding: .5em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: rgb(98, 94, 94);
+}
+
+.top-bar p {
+    font-size: 1.5em;
+    color: rgb(47, 43, 43);
+    font-weight: bold;
+}
+
+.top-bar .top-right > img:first-child {
+    margin-right: .5em;
+} 
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(98, 94, 94);
+}
+
+.navbar a:not(#camera) {
+    text-align: center;
+    width: 30%;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(47, 43, 43);
+    padding: .75em;
+}
+
+.navbar a#active {
+    border-bottom: 5px solid rgb(0, 255, 0);
+    color: rgb(0, 255, 0);
+}
+
+.navbar a:hover:not(#camera) {
+    background-color: rgb(105, 103, 103);
+}
+
+.navbar img {
+    width: 1.5em;
+    height: auto;
+}
+
+.top-icons {
+    opacity: .5;
+}
+
+.top-icons:hover {
+    opacity: 1;
+}
+
+.contact .person-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: rgb(88, 82, 82);
+    font-weight: 600;
+}
+
+.person-card .name-msg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.person-card .name-msg img {
+    width: 3.4em;
+    margin-right: 1em;
+}
+
+.person-card .name-msg .text :first-child {
+    color: white;
+}
+
+.person-card .time-noti {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.person-card .time-noti img {
+    width: 1.8em;
+}
+
+.person-card:hover {
+    background-color: rgb(78, 73, 73);
+}
+
+.msg-btn {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+}
+
+
+ 

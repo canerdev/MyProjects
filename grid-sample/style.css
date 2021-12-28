@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: white;
+    text-decoration: none
+}
+
+a:hover {
+    color: black;
+}
+
+.grid-item {
+    text-align: center;
+    color: white;
+    border-radius: 4px;
+}
+
+.grid-container .grid-item > img {
+    height: 200px;
+    width: auto;    
+}
+
+.grid-container div {
+    background-color: crimson;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: 100px 200px 200px 200px 100px;
+    grid-gap: 10px;
+}
+
+#header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    font-size: 1.6em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#header .my-name:hover {
+    color: aquamarine;
+}
+
+#header .navbar ul {
+    list-style-type: none;
+}
+
+#header .navbar ul  li {
+    float: left;
+    margin: 0 .75em;
+}
+
+#aside {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.aside-items {
+    padding: .5em 1em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+ #aside .hover:hover {
+     transition: all .2s ease-in-out;
+    border-radius: 4px;
+    background-color: white;
+    color: crimson;
+}
+
+#footer {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer img:hover {
+    opacity: .8;
+}
+
+@media (max-width:768px) {
+    #header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #header .my-name {
+        margin-bottom: .75em;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto ;
+        grid-template-rows: 100px 200px 200px 200px 100px;
+        grid-gap: 10px;
+    }
+}
+
